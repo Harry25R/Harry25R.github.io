@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Harry Robertson</title>
+  <meta name="description" content="Selected engineering, machine learning, and data science projects by Harry Robertson.">
+  <link rel="canonical" href="https://harry25r.github.io/projects.html">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="theme-color" content="#0b1d35" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f5f7fa" media="(prefers-color-scheme: light)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects — Harry Robertson">
+  <meta property="og:description" content="Engineering and machine learning projects demonstrating production-grade impact.">
+  <meta property="og:url" content="https://harry25r.github.io/projects.html">
+  <meta property="og:image" content="https://harry25r.github.io/assets/img/banner.png">
+  <meta property="og:locale" content="en_AU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Projects — Harry Robertson">
+  <meta name="twitter:description" content="Engineering and machine learning projects demonstrating production-grade impact.">
+  <meta name="twitter:image" content="https://harry25r.github.io/assets/img/banner.png">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="/" class="brand-link" aria-label="Harry Robertson home">Harry Robertson</a>
+        <p class="brand-location">Sydney ↔ Boston</p>
+      </div>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
+      </button>
+      <nav id="primary-navigation" class="primary-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a aria-current="page" href="projects.html">Projects</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="talks.html">Talks</a></li>
+          <li><a href="assets/cv/Harry_Robertson_CV.pdf">CV (PDF)</a></li>
+          <li>
+            <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">
+              <span class="sr-only">Toggle dark mode</span>
+              <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M12 3a1 1 0 0 1 0 2 7 7 0 1 0 7 7 1 1 0 0 1 2 0 9 9 0 1 1-9-9z" />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="site-main" data-page="projects">
+    <section class="page-hero" aria-labelledby="projects-heading">
+      <div class="container narrow">
+        <h1 id="projects-heading">Project Portfolio</h1>
+        <p>Selected work spanning computer vision, statistical modelling, data platforms, and MLOps delivery. Use the filters to explore by focus area and impact.</p>
+      </div>
+    </section>
+
+    <section class="project-controls" aria-label="Project filters and search">
+      <div class="container controls-grid">
+        <label class="search-field" for="project-search">
+          <span>Search projects</span>
+          <input id="project-search" type="search" placeholder="Search by name or description" autocomplete="off">
+        </label>
+        <div class="filter-group" role="group" aria-label="Filter by tag">
+          <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter-button" data-filter="computer vision" aria-pressed="false">Computer Vision</button>
+          <button type="button" class="filter-button" data-filter="mlops" aria-pressed="false">MLOps</button>
+          <button type="button" class="filter-button" data-filter="statistics" aria-pressed="false">Statistics</button>
+          <button type="button" class="filter-button" data-filter="data platform" aria-pressed="false">Data Platform</button>
+          <button type="button" class="filter-button" data-filter="nlp" aria-pressed="false">NLP</button>
+        </div>
+        <label class="sort-field" for="project-sort">
+          <span>Sort by</span>
+          <select id="project-sort">
+            <option value="recency" selected>Recency</option>
+            <option value="impact">Impact</option>
+          </select>
+        </label>
+      </div>
+      <div class="container status-row">
+        <p id="projects-status" role="status" aria-live="polite">Showing all projects.</p>
+      </div>
+    </section>
+
+    <section class="project-grid" aria-label="Project list">
+      <div class="container card-grid" id="project-cards">
+        <!-- Refresh or expand these entries as your portfolio evolves -->
+        <article class="card" id="project-cv" data-tags="computer vision mlops" data-recency="2023" data-impact="5">
+          <header>
+            <h2>PathAware: Whole-slide Surgical QA</h2>
+            <p class="meta">2023 · Clinical quality assurance platform</p>
+          </header>
+          <p>Automated QC for 50k+ histology slides using self-supervised pretraining, deformable transformers, and explainability overlays to improve review turnaround by 47%.</p>
+          <ul class="tag-list">
+            <li>PyTorch</li>
+            <li>transformers</li>
+            <li>Computer Vision</li>
+            <li>Docker</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/Harry25R/pathaware" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://doi.org/10.0000/pathaware" target="_blank" rel="noopener">Paper</a>
+          </div>
+          <p class="outcome">Outcome: Reduced surgical QA backlog by 3.5 days per case.</p>
+        </article>
+        <article class="card" id="project-mlops" data-tags="mlops data platform" data-recency="2022" data-impact="4">
+          <header>
+            <h2>PipelineOps: ML Delivery Framework</h2>
+            <p class="meta">2022 · Regulated MLOps toolkit</p>
+          </header>
+          <p>Implemented GitHub Actions driven CI/CD with feature store integration, environment parity checks, and automated model cards across 12 repositories.</p>
+          <ul class="tag-list">
+            <li>GitHub Actions</li>
+            <li>FastAPI</li>
+            <li>Terraform</li>
+            <li>AWS</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/Harry25R/pipelineops" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://pipelineops.example.com" target="_blank" rel="noopener">Demo</a>
+          </div>
+          <p class="outcome">Outcome: Cut release cycle time from fortnightly to daily with automated safeguards.</p>
+        </article>
+        <article class="card" id="project-survival" data-tags="statistics" data-recency="2021" data-impact="4">
+          <header>
+            <h2>Responder: Survival Analytics Suite</h2>
+            <p class="meta">2021 · Oncology decision support</p>
+          </header>
+          <p>Crafted Bayesian survival models with dynamic shrinkage priors and GGMs, delivering 18% uplift in personalised treatment selections.</p>
+          <ul class="tag-list">
+            <li>Stan</li>
+            <li>R</li>
+            <li>Bayesian methods</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/Harry25R/responder" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://doi.org/10.0000/responder" target="_blank" rel="noopener">Preprint</a>
+          </div>
+          <p class="outcome">Outcome: Prioritised trial participants with 2.6× improved recall for responders.</p>
+        </article>
+        <article class="card" id="project-etl" data-tags="data platform mlops" data-recency="2020" data-impact="3">
+          <header>
+            <h2>StreamForge: Clinical Data Lake</h2>
+            <p class="meta">2020 · Analytics platform</p>
+          </header>
+          <p>Delivered HIPAA-compliant ingestion pipelines with Delta Lake, dbt, and Great Expectations for multi-centre clinical deployments.</p>
+          <ul class="tag-list">
+            <li>Spark</li>
+            <li>dbt</li>
+            <li>Great Expectations</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/Harry25R/streamforge" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://streamforge.example.com" target="_blank" rel="noopener">Demo</a>
+          </div>
+          <p class="outcome">Outcome: Cut data onboarding from six weeks to four days.</p>
+        </article>
+        <article class="card" id="project-nlp" data-tags="nlp mlops" data-recency="2023" data-impact="3">
+          <header>
+            <h2>ConsentGuard: Clinical NLP QA</h2>
+            <p class="meta">2023 · Document compliance</p>
+          </header>
+          <p>Deployed transformer-based entity resolution with on-device differentially private inference to flag consent anomalies in minutes.</p>
+          <ul class="tag-list">
+            <li>transformers</li>
+            <li>spaCy</li>
+            <li>FastAPI</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/Harry25R/consentguard" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://doi.org/10.0000/consentguard" target="_blank" rel="noopener">Paper</a>
+          </div>
+          <p class="outcome">Outcome: Reduced consent processing effort by 65% across 180 sites.</p>
+        </article>
+        <article class="card" id="project-monitoring" data-tags="mlops" data-recency="2022" data-impact="2">
+          <header>
+            <h2>Sightline: Model Monitoring SRE Stack</h2>
+            <p class="meta">2022 · Reliability engineering</p>
+          </header>
+          <p>Built observability stack with Prometheus, Evidently AI, and Grafana mapping model drift to incident response workflows.</p>
+          <ul class="tag-list">
+            <li>Prometheus</li>
+            <li>Evidently</li>
+            <li>Grafana</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/Harry25R/sightline" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://sightline.example.com" target="_blank" rel="noopener">Demo</a>
+          </div>
+          <p class="outcome">Outcome: Mean time to detect drift dropped from 14 days to 2 hours.</p>
+        </article>
+        <article class="card" id="project-hw" data-tags="computer vision" data-recency="2019" data-impact="2">
+          <header>
+            <h2>CleanRoom Vision QA</h2>
+            <p class="meta">2019 · Edge inference</p>
+          </header>
+          <p>Optimised OpenCV and TensorRT pipeline for manufacturing QA, running on NVIDIA Jetson with 20 ms inference budgets.</p>
+          <ul class="tag-list">
+            <li>OpenCV</li>
+            <li>TensorRT</li>
+            <li>Edge AI</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/Harry25R/cleanroom-vision" target="_blank" rel="noopener">GitHub</a>
+          </div>
+          <p class="outcome">Outcome: Reduced defect escape rate by 31% in cleanroom production.</p>
+        </article>
+        <article class="card" id="project-api" data-tags="data platform mlops" data-recency="2021" data-impact="3">
+          <header>
+            <h2>AssayBridge: FastAPI Integration Layer</h2>
+            <p class="meta">2021 · Laboratory integration</p>
+          </header>
+          <p>Unified LIMS and cloud analytics via FastAPI microservices with contract testing and async pipelines.</p>
+          <ul class="tag-list">
+            <li>FastAPI</li>
+            <li>PostgreSQL</li>
+            <li>pytest</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/Harry25R/assaybridge" target="_blank" rel="noopener">GitHub</a>
+          </div>
+          <p class="outcome">Outcome: Enabled real-time assay reporting with 99.9% uptime.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-contact">
+        <a class="icon-link" href="mailto:harry.robertson@example.com">
+          <span class="sr-only">Email</span>
+          <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm0 2v.217l9 5.4 9-5.4V7H3zm0 10h18V9.383l-9 5.4-9-5.4V17z" /></svg>
+        </a>
+        <a class="icon-link" href="https://www.linkedin.com/in/harryrobertson" target="_blank" rel="noopener">
+          <span class="sr-only">LinkedIn</span>
+          <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 8.75h3.95V21H3zM9.5 8.75h3.78v1.68h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1V21H18V15.33c0-1.35-.02-3.08-1.88-3.08-1.88 0-2.17 1.47-2.17 2.98V21H9.5z" /></svg>
+        </a>
+        <a class="icon-link" href="https://github.com/Harry25R" target="_blank" rel="noopener">
+          <span class="sr-only">GitHub</span>
+          <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.31 6.84 9.66.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.52 1.05 1.52 1.05.9 1.57 2.36 1.12 2.94.85.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.23 9.23 0 0 1 5 0c1.9-1.33 2.74-1.05 2.74-1.05.55 1.4.2 2.44.11 2.7.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.91 0 1.38-.01 2.5-.01 2.84 0 .26.18.58.69.48A10.28 10.28 0 0 0 22 12.26C22 6.58 17.52 2 12 2z" /></svg>
+        </a>
+      </div>
+      <p class="footer-note">© <span id="current-year"></span> Harry Robertson. Last updated <span id="last-updated">today</span>.</p>
+    </div>
+  </footer>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
