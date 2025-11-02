@@ -1,0 +1,4 @@
+date,value,label
+2023-03,0.78,Model v1
+2023-09,0.83,External validation
+2024-05,0.88,Production rollout

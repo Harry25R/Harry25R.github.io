@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Boston skyline illustration</title>
+  <desc id="desc">Stylised geometric skyline representing Boston at night.</desc>
+  <defs>
+    <linearGradient id="night" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0b172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#night)" />
+  <g fill="#f59e0b" opacity="0.2">
+    <circle cx="450" cy="100" r="50" />
+  </g>
+  <g fill="#60a5fa">
+    <rect x="70" y="190" width="90" height="130" rx="12" />
+    <rect x="180" y="150" width="100" height="170" rx="12" />
+    <path d="M330 320h-100l50-180z" opacity="0.85" />
+    <rect x="350" y="200" width="70" height="120" rx="10" />
+    <rect x="440" y="180" width="100" height="140" rx="14" />
+  </g>
+  <rect x="0" y="320" width="600" height="80" fill="#020617" opacity="0.6" />
+</svg>

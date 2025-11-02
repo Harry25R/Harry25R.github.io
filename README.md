@@ -1,35 +1,36 @@
 # Harry Robertson — Personal Site
 
-Static personal website for Harry Robertson's CV, portfolio, publications, and talks. Built for GitHub Pages with no build tooling.
+Tailwind-powered personal site for Harry Robertson's CV, portfolio, publications, and talks. The repo targets GitHub Pages; all assets compile to static HTML/CSS/JS.
 
 ## Structure
 
-- `index.html` — landing page with hero, skills, experience, highlights.
-- `projects.html` — searchable and filterable project showcase.
-- `publications.html` — publication list with BibTeX reveals.
-- `talks.html` — talks, seminars, and workshop listings.
-- `assets/css/style.css` — responsive layout, dark mode tokens, print styles.
-- `assets/js/main.js` — navigation, theme toggle, project filters, footer metadata.
-- `assets/img/` — avatar, social banners, icons.
-- `assets/cv/Harry_Robertson_CV.pdf` — placeholder CV. Replace with latest PDF.
+- `index.html`, `projects.html`, `publications.html`, `talks.html` — content pages with progressive enhancements.
+- `assets/css/input.css` — Tailwind source; `assets/css/style.css` — compiled output (≤80 KB).
+- `assets/js/src/` — readable ES modules. Run the build script to minify into `assets/js/` (≤25 KB served).
+- `assets/data/` — JSON/CSV data powering interactive components.
+- `img/` — avatar, banner, manifest icons, hero illustrations.
+- `assets/cv/Harry_Robertson_CV.pdf` — placeholder CV; replace with the latest PDF.
+- `.github/workflows/pages.yml` — GitHub Actions pipeline that builds CSS/JS and deploys to Pages.
 
-## Local Preview
-
-Open `index.html` directly in your browser or use a lightweight server:
+## Local Development
 
 ```bash
+npm install
+npm run build   # compiles Tailwind + minifies JS into assets/js/
 python3 -m http.server
 ```
 
-## Deploying to GitHub Pages
+Edit styles in `assets/css/input.css` and modules in `assets/js/src/`. Re-run `npm run build` (or `npm run build:css` / `npm run build:js`) after making changes.
 
-1. Commit and push to the `main` branch of the `Harry25R.github.io` repository.
-2. In GitHub, ensure **Settings → Pages** is set to deploy from the `main` branch root.
-3. Changes publish automatically at `https://harry25r.github.io/`.
+## Deployment
 
-## Customisation
+1. Push to `main` (`Harry25R.github.io` repository).
+2. GitHub Actions runs `npm run build` and deploys the generated static files.
+3. Site publishes at `https://harry25r.github.io/`.
 
-- Update contact details, social links, and copy in the HTML files (look for inline comments where tweaks are expected).
-- Replace the placeholder CV PDF, avatar, and banner images under `assets/`.
-- Adjust project metadata or add entries by editing `projects.html`.
+## Customisation Notes
 
+- Update contact links, greetings, and hero copy directly in the HTML files.
+- Extend projects/publications/talks data via the JSON files in `assets/data/`.
+- Replace `img/avatar.jpg`, `img/banner.png`, hero illustrations, and the CV PDF with production-ready assets.
+- Tailwind safelist lives in `tailwind.config.js`; add classes there if run-time string generation is required.

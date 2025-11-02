@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Whole-slide Image Segmentation",
+    "tags": ["vision", "pytorch", "docker", "fastapi"],
+    "summary": "End-to-end whole-slide segmentation with validated deployment across clinical sites.",
+    "impact": ["AUROC 0.78→0.88", "p95 220→128 ms"],
+    "links": { "repo": "", "paper": "", "demo": "" },
+    "date": "2024-05"
+  },
+  {
+    "title": "PipelineOps Delivery Framework",
+    "tags": ["mlops", "github-actions", "terraform", "observability"],
+    "summary": "Regulated CI/CD workflows with automated documentation and monitoring gates.",
+    "impact": ["Release cycle 14d→1d", "Zero rollback incidents"],
+    "links": { "repo": "", "paper": "", "demo": "" },
+    "date": "2023-10"
+  }
+]

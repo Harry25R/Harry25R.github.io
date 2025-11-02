@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Sydney skyline illustration</title>
+  <desc id="desc">Stylised geometric skyline representing Sydney.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e0f2ff" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#sky)" />
+  <g fill="#1f6feb" opacity="0.15">
+    <circle cx="120" cy="160" r="80" />
+    <circle cx="320" cy="130" r="120" />
+    <circle cx="520" cy="170" r="70" />
+  </g>
+  <g fill="#2563eb">
+    <rect x="60" y="180" width="80" height="140" rx="12" />
+    <rect x="170" y="150" width="90" height="170" rx="12" />
+    <path d="M310 310h-90l45-160z" opacity="0.85" />
+    <rect x="330" y="190" width="70" height="130" rx="10" />
+    <rect x="420" y="170" width="110" height="150" rx="14" />
+  </g>
+  <rect x="0" y="320" width="600" height="80" fill="#0f172a" opacity="0.12" />
+</svg>

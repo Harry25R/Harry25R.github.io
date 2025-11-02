@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Integrative Analysis of Multi-Omics Data in Renal Transplant Monitoring",
+    "venue": "Preprint",
+    "year": 2025,
+    "tags": ["bioinformatics", "statistics"],
+    "doi": "",
+    "code": "",
+    "pdf": "",
+    "abstract": "Framework combining Bayesian survival models with transcriptomic signals to flag rejection risk early."
+  },
+  {
+    "title": "Continuous Verification for Regulated Machine Learning Pipelines",
+    "venue": "IEEE Conference on MLOps",
+    "year": 2022,
+    "tags": ["mlops", "quality"],
+    "doi": "10.0000/mlops.2022.98765",
+    "code": "https://github.com/Harry25R/continuous-verification",
+    "pdf": "",
+    "abstract": "Reports a validation harness ensuring every model update satisfies ISO-aligned acceptance tests."
+  }
+]
